@@ -29,7 +29,7 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+router.get("/", (req, res) => {
   // const name = req.body.firstName + req.body.lastName;
   // const email = req.body.email;
   // const message = req.body.message;
@@ -52,4 +52,6 @@ router.post("/contact", (req, res) => {
   // });
   res.json({ status: "Message Sent" });
 });
+
+
 module.exports = app;
